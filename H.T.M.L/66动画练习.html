@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        .loading{
+            width: 5px;
+            height: 20px;
+            background-color: orange;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            animation: loading 0.3s linear 0s infinite alternate;
+        }
+        .loading::before,.loading::after{
+            content: "";
+            display: block;
+            width: 4px;
+            height: 20px;
+            background-color: orange;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .loading::before{
+            margin-left: -10px;
+            transform: scale(1,0.4);
+            animation: loading 0.3s linear 0.3s infinite alternate;
+        }
+        .loading::after{
+            margin-left: 10px;
+            transform: scale(1,0.7);
+            animation: loading 0.3s linear 0.7s infinite alternate;
+        }
+        @keyframes loading{
+            0%{
+                transform: scale(1,0.4);
+                opacity: 0.2;
+            }
+            100%{
+                transform: scale(1,1);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="loading"></div>
+    </div>
+</body>
+</html>

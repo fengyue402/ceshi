@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [title = "jia.com"]{
+            color: red;
+        } */
+        /* [title |= "jia"]{
+            color: red;
+        } */
+        /* [title ^="jia"]{
+            color: red;
+        } */
+        /* [title $="com"]{
+            color: red;
+        } */
+        [title *="com"]{
+            color: red;
+        }
+        /* [title ~="com"]{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <a href="#" title="jia">title="jia"</a>
+    <a href="#" title="jia.com">title="jia.com"</a>
+    <a href="#" title="jia- com">title="jia- com"</a>
+    <a href="#">no title</a>
+</body>
+</html>

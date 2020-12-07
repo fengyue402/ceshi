@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        .father{
+            width: 100%;
+            height: 63px;
+            background-color: #eff4fa;
+            border: 1px solid #d6dfea;
+            line-height: 30px;
+            position:fixed;
+            top: 0;
+        }
+        .father .son{
+            width: 1291px;
+            height: 100%;
+            background-color: #eff4fa;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li{
+            list-style:none ;
+        }
+        .father .son a{
+            float: right;
+            font-size: 12px;
+            background-repeat: no-repeat;
+            width: 182px;
+            height: 38px;
+        }
+        .father .son img{
+            margin-top: 14px;
+        }
+        a{
+            color: rgb(80, 124, 173);
+            text-decoration: none;
+        }
+        .son2 img{
+            margin-top: 100px;
+        }
+        .foot1{
+            width: 100%;
+            height: 38px;
+            position: fixed;
+            bottom: 46px;
+            background-color: #eff4fa;
+        }
+        .foot1 .foot2{
+            width: 1291px;
+            height: 100%;
+            background-color: #eff4fa;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+            <img src="../qq-mail/qqmail_logo.png" alt="">
+            <ul>
+                <li>
+                    <a href="#">基本版</a>
+                    <div>|</div>
+                </li>
+                <li>
+                    <a href="#">English</a>
+                    <div>|</div>
+                </li>
+                <li>
+                    <a href="#">手机版</a>
+                    <div>|</div>
+                </li>
+                <li>
+                    <a href="#">企业邮箱</a>
+                    <div>|</div>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    <div class="son2">
+            <img src="../qq-mail/qq_mail_bg.jpg" alt="">
+            <span class="head">微信</span>
+            <span class="head">QQ</span>
+            <form action="">
+            <input type="text" placeholder="支持QQ号/邮箱/手机号登陆">
+            <input type="password" placeholder="QQ密码">
+            <input type="checkbox">下次自动登录
+            <div class="header1">登录</div>
+            <div class="header2">扫码快捷登录</div>
+            <a href="#">忘了密码</a>
+            <a href="#">注册新账号</a>
+        </form>
+    </div>
+    <div class="foot1">
+        <footer class="foot2">
+            <a href="#">关于腾讯</a>
+            <a href="#">服务条款</a>
+            <a href="#">隐私政策</a>
+            <a href="#">客服中心</a>
+            <a href="#">联系我们</a>
+            <a href="#">帮助中心</a>
+            ©1998 - 2020 Tencent Inc. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
